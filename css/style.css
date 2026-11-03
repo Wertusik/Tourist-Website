@@ -1,5 +1,6 @@
 :root {
     --orange: #FF7200;
+    --gray: #F1F5F9;
     
 }
 
@@ -102,9 +103,10 @@ a {
 }
 
 .about__card {
-    width: 400px;
-    height: 450px;
-    background-color: blue;
+    width: 450px;
+    height: 600px;
+    background-color: var(--gray);
+    border-radius: 20px;
     text-align: center;
 }
 
@@ -127,4 +129,20 @@ a {
 .about__price {
     padding-top: 10px;
     font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.about__button {
+    font-weight: 700;
+    
+    padding: 15px 45px;
+    background: var(--orange);
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about__button:hover {
+    opacity: 90%;
 }
