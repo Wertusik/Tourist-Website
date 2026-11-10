@@ -53,7 +53,7 @@ a {
 .hero {
     padding-inline: 20px;
     margin-inline: auto;
-    padding-top: 40px;
+    padding-top: 80px;
     max-width: 1350px;
 }
 
@@ -73,7 +73,7 @@ a {
 }
 
 .about {
-    padding-top: 40px;
+    padding-top: 80px;
     max-width: 1350px;
     margin-inline: auto;
     padding-inline: 20px;
@@ -84,12 +84,12 @@ a {
 }
 
 .about__content {
-    padding-top: 15px;
+    padding-top: 30px;
     font-size: 18px;
 }
 
-.about__text, .about__text {
-    padding-top: 10px;    
+.about__text + .about__text {
+    padding-top: 15px;    
 }
 
 .about__products {
@@ -149,7 +149,7 @@ a {
 }
 
 .review {
-    padding-top: 40px;  
+    padding-top: 80px;  
     max-width: 1350px;   
     margin-inline: auto; 
     padding-inline: 20px;
@@ -165,7 +165,7 @@ a {
 }
 
 .review__cards {
-    padding-top: 15px;
+    padding-top: 30px;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -197,7 +197,8 @@ a {
 
 .contacts {
     max-width: 1350px;
-    padding-top: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
     margin-inline: auto;
     padding-inline: 20px;
 }
@@ -205,19 +206,17 @@ a {
 .contacts__main {
     display: flex;
     justify-content: space-between;
-}
-
-.contacts__wrapper {
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 .contacts__info {
     display: grid;
-    grid-template-columns: max-content 1fr max-content 1fr;
+    grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 20px;
     padding-bottom: 30px;
 }
+
 
 .contacts__info-img {
     width: 40px;
@@ -233,4 +232,64 @@ a {
 
 .contacts__info-text {
     font-size: 18px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #23292d;
+}
+
+.footer__main {
+    max-width: 1350px;   
+    width: 100%;
+    margin-inline: auto; 
+    padding-inline: 20px;
+  
+}
+
+.footer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__left,
+.footer__right {
+    display: flex;
+    align-items: center;
+}
+
+
+.footer__right {
+    gap: 20px;
+}
+
+.footer__header-title {
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.footer__main-img {
+    width: 150px;
+}
+
+.footer__app-img {
+    border-radius: 100px;
+}
+
+.footer__header-text {
+    color: #757474;
+    font-size: 15px;
+}
+
+.footer__link {
+    display: flex;
+    justify-content: right;
+}
+
+.footer__year {
+    font-size: 20px;
+    color: #757474;
+    text-align: center;
 }
