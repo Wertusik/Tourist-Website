@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I TRAVEL</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,24 +14,32 @@
     <header class="header">
         <div class="header__wrapper">
             <nav class="header__nav">
-                <img src="./img/logotravel.svg" alt="Логотип">
+                <img src="./img/logotravel.svg" alt="Логотип" class="header__logo">
                 <ul class="header__list">
-                    <li>
+                    <li class="header__list">
+                       <a class="header__list-link active" href="#about">Главная</a>
+                    </li>
+                    <li class="header__list">
                        <a class="header__list-link" href="#about">О нас</a>
                     </li>
-                    <li>
-                        <a class="header__list-link" href="/">Каталог</a>
+                    <li class="header__list">
+                        <a class="header__list-link" href="./catalog.html">Каталог</a>
                     </li>
-                    <li>
+                    <li class="header__list">
                         <a class="header__list-link" href="#review">Отзывы</a>
                     </li>
-                    <li>
+                    <li class="header__list">
                         <a class="header__list-link" href="#contacts">Контакты</a>
                     </li>
                 </ul>
-                <div class="header__cart">
-                    <a href="/">
-                        <img src="./img/cart.png" alt="Корзина">
+                <div class="header__right">
+                    <a href="" class="header__cart-link">
+                        <img src="./img/login.png" alt="Войти" class="header__cart-img">
+                        <span class="header__cart-text">Войти</span>
+                    </a>
+                    <a href="/" class="header__cart-link">
+                        <img src="./img/cart.png" alt="Корзина" class="header__cart-img">
+                        <span class="header__cart-text">Корзина</span>
                     </a>
                 </div>
             </nav>
@@ -193,7 +201,7 @@
             <div class="footer__bottom">
                 <div class="footer__link">
                     <a href="#about" class="footer__bottom-text">О нас</a>
-                    <a href="#" class="footer__bottom-text">Каталог</a>
+                    <a href="./catalog.html" class="footer__bottom-text">Каталог</a>
                     <a href="#review" class="footer__bottom-text">Отзывы</a>
                     <a href="#contacts" class="footer__bottom-text">Контакты</a>
                 </div>

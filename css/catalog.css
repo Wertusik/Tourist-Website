@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange: #FF7200;
+    --gray: #F1F5F9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1350px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    padding-top: 30px;
+}
+
+.header__wrapper {
+    max-width: 1350px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: var(--orange) solid 1px;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-right: 30px;
+}
+
+.header__cart-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__cart-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+}
+
+.header__cart-img {
+    width: 40px;
+}
+
+.header__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+}
+
+.header__list-link {
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -0.47px;
+    padding-bottom: 5px;
+    transition: opacity 0.3s;
+}
+
+
+.header__list-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header__list-link:not(.active):hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.header__list-link.active {
+    border-bottom: 2px solid var(--orange);
+}
+
+.catalog__wrapper {
+    padding-top: 20px;
+}
+
+.catalog__header {
+    font-size: 40px;
+}
+
+.catalog__cards {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 22px;
+    gap: 22px;
+}
+
+.catalog__card {
+    background-color: var(--gray);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 255px;
+    padding: 18px 0 40px;
+}
+
+.catalog__img {
+    display: block;
+    max-width: 240px;
+    max-height: 170px;
+    margin: auto;
+    width: auto;
+    object-fit: contain;
+}
+
+.catalog__text {
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.catalog__text:hover {
+    color: #FF7200;
+}
+
