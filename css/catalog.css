@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
     --orange: #FF7200;
     --gray: #F1F5F9;
@@ -68,6 +66,11 @@ a {
     font-size: 12px;
     font-weight: 600;
     color: black;
+    transition: color 0.5s ease;
+}
+
+.header__cart-link:hover .header__cart-text {
+    color: var(--orange);
 }
 
 .header__cart-img {
@@ -113,7 +116,8 @@ a {
 }
 
 .catalog__wrapper {
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 80px;
 }
 
 .catalog__header {
@@ -135,7 +139,7 @@ a {
     flex-direction: column;
     align-items: center;
     height: 255px;
-    padding: 18px 0 40px;
+    padding: 18px 0 20px;
 }
 
 .catalog__img {
@@ -151,10 +155,102 @@ a {
     color: black;
     font-weight: 700;
     font-size: 20px;
+    margin-top: auto;
+    transition: color 0.5s ease;
+}
+
+.catalog__card:hover .catalog__text {
+    color: var(--orange);
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: #23292d;
+}
+
+.footer__main {
+    max-width: 1350px;   
+    width: 100%;
+    margin-inline: auto; 
+    padding-inline: 20px;
+  
+}
+
+.footer__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.footer__left,
+.footer__right {
+    display: flex;
+    align-items: center;
+}
+
+.footer__right {
+    gap: 20px;
+}
+
+.footer__header-title {
+    padding-left: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.footer__logo-img {
+    width: 150px;
+}
+
+.footer__app-img {
+    border-radius: 50%;
+}
+
+.footer__header-text {
+    color: #757474;
+    font-size: 15px;
+}
+
+
+.footer__year {
+    font-size: 15px;
+    color: #757474;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.footer__bottom {
+    display: flex;
+    align-items: center;
+}
+
+.footer__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+.footer__bottom-text {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
     transition: color 0.3s ease;
 }
 
-.catalog__text:hover {
-    color: #FF7200;
+.footer__bottom-text:hover {
+    color: #757474; 
 }
 
+.footer__main-info {
+    padding-left: 70px;
+    padding-right:60px;
+}
+
+.footer__info {
+    color: #757474;
+    font-size: 15px;  
+}

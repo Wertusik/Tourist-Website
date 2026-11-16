@@ -55,6 +55,11 @@ body {
     font-size: 12px;
     font-weight: 600;
     color: black;
+    transition: color 0.5s ease;
+}
+
+.header__cart-link:hover .header__cart-text {
+    color: var(--orange);
 }
 
 .header__cart-img {
@@ -193,7 +198,7 @@ a {
     background: var(--orange);
     border: none;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: opacity 0.5s ease;
     cursor: pointer;
 }
 
@@ -339,12 +344,12 @@ a {
     color: white;
 }
 
-.footer__main-img {
+.footer__logo-img {
     width: 150px;
 }
 
 .footer__app-img {
-    border-radius: 100px;
+    border-radius: 50%;
 }
 
 .footer__header-text {
@@ -352,10 +357,6 @@ a {
     font-size: 15px;
 }
 
-.footer__link {
-    display: flex;
-    justify-content: right;
-}
 
 .footer__year {
     font-size: 15px;
@@ -372,8 +373,8 @@ a {
 .footer__link {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    transition: color 0.3s;
 }
 
 
