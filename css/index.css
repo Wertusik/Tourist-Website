@@ -1,5 +1,5 @@
 :root {
-    --orange: #FF7200;
+    --orange: #fc5800;
     --gray: #F1F5F9;
     
 }
@@ -105,7 +105,7 @@ body {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .hero {
