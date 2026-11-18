@@ -28,14 +28,14 @@
                         <a class="header__list-link active" href="">Каталог</a>
                     </li>
                     <li class="header__list">
-                        <a class="header__list-link" href="#review">Отзывы</a>
+                        <a class="header__list-link" href="./review.html">Отзывы</a>
                     </li>
                     <li class="header__list">
                         <a class="header__list-link" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
                 <div class="header__right">
-                    <a href="" class="header__cart-link">
+                    <a href="#overlay" class="header__cart-link">
                         <img src="./img/login.png" alt="Войти" class="header__cart-img">
                         <span class="header__cart-text">Войти</span>
                     </a>
@@ -118,7 +118,7 @@
                 <div class="footer__link">
                     <a href="./about.html" class="footer__bottom-text">О нас</a>
                     <a href="" class="footer__bottom-text">Каталог</a>
-                    <a href="#review" class="footer__bottom-text">Отзывы</a>
+                    <a href="./review.html" class="footer__bottom-text">Отзывы</a>
                     <a href="./contacts.html" class="footer__bottom-text">Контакты</a>
                 </div>
                 <div class="footer__main-info">
@@ -128,6 +128,21 @@
             <p class="footer__year">© I TRAVEL 2026</p>          
         </div>
     </footer>
+    <!-- Личный кабинет -->
+    <div class="overlay" id="overlay">
+        <div class="overlay__wrapper">
+            <a href="#" class="overlay__close">
+                <img src="./img/close.png" alt="Закрыть" class="overlay__close-item">
+            </a>
+            <h2 class="overlay__title">Войти</h2>
+            <form action="" class="overlay__content">
+                <label for="" class="overlay__name">Ваш телефон</label>
+                <input type="tel" class="overlay__phone" placeholder="+ 7 (___) ___-__-__"  required>
+                <button class="overlay__button">Отправить</button>
+                <p class="overlay__info">Нажимая кнопку «Войти», я принимаю условия пользовательского соглашения и подтверждаю, что ознакомился с условиями политики обработки персональных данных</p>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>
