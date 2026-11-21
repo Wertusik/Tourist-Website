@@ -112,7 +112,7 @@ a {
 .hero {
     padding-inline: 20px;
     margin-inline: auto;
-    padding-top: 80px;
+    padding-top: 60px;
     max-width: 1350px;
 }
 
@@ -132,7 +132,7 @@ a {
 }
 
 .about {
-    padding-top: 80px;
+    padding-top: 60px;
     max-width: 1350px;
     margin-inline: auto;
     padding-inline: 20px;
@@ -192,8 +192,9 @@ a {
 }
 
 .about__button {
-    font-weight: 600;
-    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
     color: white;
     padding: 15px 45px;
     background: var(--orange);
@@ -209,7 +210,7 @@ a {
 }
 
 .review {
-    padding-top: 80px;  
+    padding-top: 60px;  
     max-width: 1350px;   
     margin-inline: auto; 
     padding-inline: 20px;
@@ -273,7 +274,7 @@ a {
 
 .contacts {
     max-width: 1350px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 130px;
     margin-inline: auto;
     padding-inline: 20px;
@@ -399,108 +400,4 @@ a {
 .footer__info {
     color: #757474;
     font-size: 15px;  
-}
-
-.overlay {
-    position: fixed;
-    inset: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: rgba(0, 0, 0, 0.45);
-}
-
-.overlay:target {
-    display: flex;
-}
-
-.overlay__wrapper {
-    position: relative;
-    background-color: white;
-    border-radius: 16px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 630px;
-    max-height: 560px;
-}
-
-.overlay__title {
-    font-size: 30px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.overlay__name {
-    opacity: 30%;
-    font-size: 13px;
-    
-}
-
-.overlay__close {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-inline: 25px;
-    padding-top: 25px;
-}
-
-.overlay__close-item {
-    width: 100%;
-    max-width: 25px;
-    opacity: 70%;
-    transition: opacity 0.3s ease;
-}
-
-.overlay__close-item:hover {
-    opacity: 100%;
-}
-
-.overlay__content {
-    display: flex;
-    flex-direction: column;
-    padding: 80px;
-    gap: 15px;
-}
-
-.overlay__phone {
-    font-family: 'Montserrat';
-    color: black;
-    width: 100%;
-    height: 52px;
-    padding: 10px;
-    border: 1px solid black;
-    line-height: 24px;
-}
-
-.overlay__phone:focus {
-    outline: none;
-}
-
-.overlay__button {
-    font-family: 'Montserrat';
-    font-weight: 600;
-    font-size: 16px;
-    cursor: pointer;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    background-color: var(--orange);
-    width: 100%;
-    height: 52px;
-    opacity: 90%;
-    transition: opacity 0.3s ease;
-}
-
-.overlay__button:hover {
-    opacity: 100%;
-}
- 
-.overlay__info {
-    padding-top: 20px;
 }

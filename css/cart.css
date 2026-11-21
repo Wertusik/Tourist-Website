@@ -31,13 +31,6 @@ a {
     padding-top: 30px;
 }
 
-.header__wrapper {
-    max-width: 1350px;
-    width: 100%;
-    margin-inline: auto;
-    padding-inline: 20px;
-}
-
 .header__nav {
     width: 100%;
     display: flex;
@@ -49,6 +42,31 @@ a {
 
 .header__logo {
     display: block;
+}
+
+.header__list {
+    list-style: none;
+}
+
+.header__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__link-img {
+    width: 40px;
+}
+
+.header__link-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    transition: color 0.5s ease;
+}
+
+.header__link:hover .header__link-text {
+    color: var(--orange);
 }
 
 .cart__wrapper {
@@ -64,6 +82,7 @@ a {
 .cart__header {
     font-size: 40px;
     font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .cart__cards {
@@ -73,12 +92,10 @@ a {
 
 .cart__card {
     width: 100%;
-    max-width: 900px;
-    max-height: 165px;
     border: 1px solid var(--light-gray);
-    display: flex;
     align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 15px 100px 1fr 90px 120px 30px;
     gap: 15px;
     padding-block: 10px;
     padding-inline: 15px;
@@ -96,15 +113,20 @@ a {
 }
 
 .cart__name {
+    width: 100%;      
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 2px;
 }
 
 .cart__card-text {
     color: black;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+    margin: 0;
+    line-height: 1.3;
 }
 
 .cart__size {
@@ -201,7 +223,7 @@ a {
 
 
 .cart__product-price {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
 }
 
@@ -213,12 +235,12 @@ a {
 
 .cart__totalprice-title {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .cart__totalprice-text {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .cart__button {
