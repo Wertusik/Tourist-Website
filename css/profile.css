@@ -118,7 +118,7 @@ a {
 }
 
 .profile__wrapper {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 350px;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -331,7 +331,7 @@ a {
 
 .user__wrapper {
     max-width: 700px;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 130px;
     display: grid;
     grid-template-columns: 200px 1fr;
@@ -476,7 +476,7 @@ a {
 .products__wrapper {
     display: grid;
     grid-template-columns: 200px 1fr;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 350px;
 }
 
@@ -506,7 +506,7 @@ a {
 
 /* REVIEWS */
 .reviews__wrapper {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 350px;
     display: grid;
     grid-template-columns: 200px 1fr;
