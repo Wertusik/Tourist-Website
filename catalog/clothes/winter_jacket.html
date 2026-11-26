@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/catalog.css">
+    <link rel="shortcut icon" href="../../img/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=block" rel="stylesheet">
     <title>I TRAVEL</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__wrapper">
+            <nav class="header__nav">
+                <a href="/" class="header__logo">
+                    <img src="../../img/logotravel.png" alt="Логотип" class="header__logo-img">
+                </a>
+                <ul class="header__list">
+                    <li class="header__item">
+                       <a class="header__list-link" href="../../index.html">Главная</a>
+                    </li>
+                    <li class="header__item">
+                       <a class="header__list-link" href="../../about.html">О нас</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__list-link active" href="../../catalog.html">Каталог</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__list-link" href="../../review.html">Отзывы</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__list-link" href="../../contacts.html">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__right">
+                    <a href="../../profile.html" class="header__cart-link">
+                        <img src="../../img/login.png" alt="Мой профиль" class="header__cart-img">
+                        <span class="header__cart-text">Мой профиль</span>
+                    </a>
+                    <a href="../../cart.html" class="header__cart-link">
+                        <img src="../../img/cart.png" alt="Корзина" class="header__cart-img">
+                        <span class="header__cart-text">Корзина</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <div class="product__wrapper">
+                <div class="product__header">
+                    <a href="./index.html" class="product__header-link">
+                        <img src="../../img/exit.png" alt="Назад" class="product__header-img">
+                    </a>
+                </div>
+                <div class="product__main">
+                    <div class="product__left">
+                        <img src="../../img/Salewa Brenta RDS Down Black Out.jpg" alt="" class="product__left-img">
+                    </div>
+                    <div class="product__right">
+                        <p class="product__name">Куртка мужская Salewa Brenta RDS Down Black Out</p>
+                        <div class="product__rating">
+                            <img src="../../img/rating.png" alt="Рейтинг" class="product__rating-img">
+                            <span class="product__rating-text">5</span>
+                        </div>
+                        <p class="product__rating-reviews">17 отзывов</p>
+                        <p class="product__price">23 990 ₽</p>
+                        <div class="product__color">
+                            <span class="product__color-item">Цвет:</span>
+                            <span class="product__color-name">Черный</span>
+                        </div>
+                        <p class="product__size-text">Выберите размер</p>
+                        <div class="product__size">
+                            <input type="radio" name="size" class="product__size-chose" id="S" checked>
+                            <label for="S" class="product__size-name">
+                                <span class="product__size-info">S</span>
+                            </label>
+                            <input type="radio" name="size" class="product__size-chose" id="M">
+                            <label for="M" class="product__size-name">
+                                <span class="product__size-info">M</span>
+                            </label>
+                            <input type="radio" name="size" class="product__size-chose" id="L">
+                            <label for="L" class="product__size-name">
+                                <span class="product__size-info">L</span>
+                            </label>
+                            <input type="radio" name="size" class="product__size-chose" id="XL">
+                            <label for="XL" class="product__size-name">
+                                <span class="product__size-info">XL</span>
+                            </label>
+                        </div>
+                        <div class="product__button">
+                            <button class="product__button-item">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__bottom">
+                    <h3 class="product__bottom-title">Описание</h3>
+                    <p class="product__bottom-text">Salewa Brenta RDS Down — лёгкая, тёплая и компактная пуховая куртка, созданная для альпинизма и ски‑тура. Ветрозащитная и водоотталкивающая нейлоновая ткань с обработкой DWR дополнена мягкой подкладкой из пухонепроницаемой таффеты. Модель можно носить как внешний или средний слой — она отлично сочетается с мембранной курткой и при этом компактно складывается в рюкзак. Утеплённый капюшон с высоким воротом, эргономичные рукава и ветрозащитная планка по всей длине молнии обеспечивают надёжную защиту от холода. Эластичные манжеты, нижний край и капюшон дополнительно препятствуют проникновению ветра, гарантируя комфорт в горных условиях.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="footer__header">
+                <div class="footer__left">
+                    <a href="/" class="footer__logo">
+                        <img src="../../img/footer_logo.png" alt="Логотип" class="footer__logo-img">
+                    </a>
+                    <h3 class="footer__header-title">I TRAVEL — ВАШ МАГАЗИН ДЛЯ ПУТЕШЕСТВИЙ </h3>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__header-text">Присоединяйтесь к нам:</span>
+                    <a href="#" class="footer__link">
+                        <img src="../../img/footer_vk.png" alt="Соц. сети" class="footer__app-img">
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img src="../../img/footer_youtube.png" alt="Соц. сети" class="footer__app-img">
+                    </a>
+                    <a href="#" class="footer__link">
+                        <img src="../../img/footer_tg.png" alt="Соц. сети" class="footer__app-img">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__link">
+                    <a href="../../about.html" class="footer__bottom-text">О нас</a>
+                    <a href="../../catalog.html" class="footer__bottom-text">Каталог</a>
+                    <a href="../../review.html" class="footer__bottom-text">Отзывы</a>
+                    <a href="../../contacts.html" class="footer__bottom-text">Контакты</a>
+                </div>
+                <div class="footer__main-info">
+                    <span class="footer__info">Использование текстовых или графических материалов с сайта запрещено без согласования с ООО "I TRAVEL". Данный сайт не является публичной офертой. Текущую цену в рублях Вы можете уточнить в спортивных магазинах "I TRAVEL", а также позвонив по телефону: +7 (495) 123-45-67</span>
+                </div>
+            </div>  
+            <p class="footer__year">© I TRAVEL 2026</p>          
+        </div>
+    </footer>
 </body>
 </html>

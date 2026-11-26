@@ -71,7 +71,11 @@ a {
     transition: color 0.5s ease;
 }
 
-.header__cart-link:hover .header__cart-text {
+.header__cart-text.active {
+    color: var(--orange);
+}
+
+.header__cart-link:not(.active):hover .header__cart-text {
     color: var(--orange);
 }
 
